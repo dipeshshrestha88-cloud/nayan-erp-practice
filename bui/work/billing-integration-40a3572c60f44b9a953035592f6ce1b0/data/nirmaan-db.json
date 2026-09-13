@@ -1,0 +1,267 @@
+{
+  "version": 4,
+  "company": {
+    "name": "Nayan Construction and Engineering Consultancy Pvt. Ltd.",
+    "country": "Nepal",
+    "currency": "NPR",
+    "fiscalYear": "2083/84 BS",
+    "vatRate": 13,
+    "taxConfig": {
+      "vatRate": 13,
+      "tdsRate": 1.5,
+      "retentionRate": 5
+    }
+  },
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "Ashwin Shrestha",
+      "email": "admin@nirmaan.local",
+      "role": "admin",
+      "salt": "802b6a9f234bb9a9ca8915cbcc3bd8de",
+      "hash": "62a1e968be4aa450f31cc63f2827c3609db93dc98c19148d06587d52c6c07448",
+      "active": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj-f4d41b6c-2c47-4ee7-ae27-fdc4e726fdf8",
+      "code": "PRJ-001",
+      "name": "Billing acceptance project",
+      "client": "Nayan Client",
+      "contractValue": 1500,
+      "budget": 1000,
+      "actualCost": 0,
+      "committedCost": 0,
+      "forecastMargin": 33.3,
+      "status": "Setup",
+      "createdAt": "2026-09-08T07:29:30.316Z"
+    }
+  ],
+  "boqItems": [
+    {
+      "id": "boq-8070a7c8-5c94-448e-a11d-f9413ebc8186",
+      "projectId": "prj-f4d41b6c-2c47-4ee7-ae27-fdc4e726fdf8",
+      "costCode": "CIV-01",
+      "description": "Concrete work",
+      "unit": "m3",
+      "quantity": 10,
+      "rate": 100,
+      "sellingRate": 150,
+      "budgetAmount": 1000,
+      "actualCost": 0,
+      "committedCost": 0,
+      "status": "Approved baseline",
+      "createdAt": "2026-09-08T07:29:30.321Z"
+    }
+  ],
+  "vendors": [],
+  "requisitions": [],
+  "purchaseOrders": [],
+  "goodsReceipts": [],
+  "vendorBills": [],
+  "payments": [],
+  "inventory": [],
+  "invoices": [],
+  "clientBills": [
+    {
+      "id": "cbi-753cec32-4227-4fb2-b6ad-61bd95fb1e05",
+      "number": "RB-0001",
+      "projectId": "prj-f4d41b6c-2c47-4ee7-ae27-fdc4e726fdf8",
+      "adDate": "2026-09-08",
+      "bsDate": "2083-05-23",
+      "lines": [
+        {
+          "boqItemId": "boq-8070a7c8-5c94-448e-a11d-f9413ebc8186",
+          "costCode": "CIV-01",
+          "description": "Concrete work",
+          "unit": "m3",
+          "quantity": 4,
+          "sellingRate": 150,
+          "grossAmount": 600
+        }
+      ],
+      "grossAmount": 600,
+      "vatRate": 13,
+      "vatAmount": 78,
+      "tdsRate": 1.5,
+      "tdsAmount": 9,
+      "retentionRate": 5,
+      "retentionAmount": 30,
+      "advanceRecovery": 0,
+      "totalReceivable": 638.9999999999999,
+      "receivedAmount": 638.9999999999999,
+      "status": "Settled",
+      "createdAt": "2026-09-08T07:29:30.325Z",
+      "createdBy": "usr-admin",
+      "certifiedAt": "2026-09-08T07:29:30.330Z",
+      "certifiedBy": "usr-admin"
+    },
+    {
+      "id": "cbi-4c4a7bb0-de0f-4fc1-a7fd-811aa794c640",
+      "number": "RB-0002",
+      "projectId": "prj-f4d41b6c-2c47-4ee7-ae27-fdc4e726fdf8",
+      "adDate": "2026-09-09",
+      "bsDate": "",
+      "lines": [
+        {
+          "boqItemId": "boq-8070a7c8-5c94-448e-a11d-f9413ebc8186",
+          "costCode": "CIV-01",
+          "description": "Concrete work",
+          "unit": "m3",
+          "quantity": 6,
+          "sellingRate": 150,
+          "grossAmount": 900
+        }
+      ],
+      "grossAmount": 900,
+      "vatRate": 13,
+      "vatAmount": 117,
+      "tdsRate": 1.5,
+      "tdsAmount": 13.5,
+      "retentionRate": 5,
+      "retentionAmount": 45,
+      "advanceRecovery": 0,
+      "totalReceivable": 958.4999999999999,
+      "receivedAmount": 0,
+      "status": "Certified",
+      "createdAt": "2026-09-08T07:29:30.332Z",
+      "createdBy": "usr-admin",
+      "certifiedAt": "2026-09-08T07:29:30.336Z",
+      "certifiedBy": "usr-admin"
+    },
+    {
+      "id": "cbi-52d439fb-02ec-4894-8b63-59a11a3aef32",
+      "number": "RB-0003",
+      "projectId": "prj-f4d41b6c-2c47-4ee7-ae27-fdc4e726fdf8",
+      "adDate": "2026-09-10",
+      "bsDate": "",
+      "lines": [
+        {
+          "boqItemId": "boq-8070a7c8-5c94-448e-a11d-f9413ebc8186",
+          "costCode": "CIV-01",
+          "description": "Concrete work",
+          "unit": "m3",
+          "quantity": 1,
+          "sellingRate": 150,
+          "grossAmount": 150
+        }
+      ],
+      "grossAmount": 150,
+      "vatRate": 13,
+      "vatAmount": 19.5,
+      "tdsRate": 1.5,
+      "tdsAmount": 2.25,
+      "retentionRate": 5,
+      "retentionAmount": 7.5,
+      "advanceRecovery": 0,
+      "totalReceivable": 159.74999999999997,
+      "receivedAmount": 0,
+      "status": "Draft",
+      "createdAt": "2026-09-08T07:29:30.338Z",
+      "createdBy": "usr-admin"
+    }
+  ],
+  "clientReceipts": [
+    {
+      "id": "cre-1cdaa677-42c2-4735-b059-c81d26ac5379",
+      "clientBillId": "cbi-753cec32-4227-4fb2-b6ad-61bd95fb1e05",
+      "amount": 638.9999999999999,
+      "adDate": "2026-09-10",
+      "bsDate": "",
+      "reference": "RCPT-001",
+      "createdAt": "2026-09-08T07:29:30.361Z",
+      "createdBy": "usr-admin"
+    }
+  ],
+  "audit": [
+    {
+      "id": "aud-ac4945e1-4993-4e4d-8af0-b9c07a68dfc1",
+      "at": "2026-09-08T07:29:30.361Z",
+      "userId": "usr-admin",
+      "action": "POST",
+      "entity": "client-receipt",
+      "entityId": "cre-1cdaa677-42c2-4735-b059-c81d26ac5379"
+    },
+    {
+      "id": "aud-126e686b-b4e8-49fc-bdc8-082aa7e4d2b0",
+      "at": "2026-09-08T07:29:30.338Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "client-bill",
+      "entityId": "cbi-52d439fb-02ec-4894-8b63-59a11a3aef32"
+    },
+    {
+      "id": "aud-25fbab0a-08b6-4bbb-a907-7af9f58eee35",
+      "at": "2026-09-08T07:29:30.336Z",
+      "userId": "usr-admin",
+      "action": "CERTIFY",
+      "entity": "client-bill",
+      "entityId": "cbi-4c4a7bb0-de0f-4fc1-a7fd-811aa794c640"
+    },
+    {
+      "id": "aud-d94c7a54-b776-475e-80ea-fefcf479af87",
+      "at": "2026-09-08T07:29:30.334Z",
+      "userId": "usr-admin",
+      "action": "SUBMIT",
+      "entity": "client-bill",
+      "entityId": "cbi-4c4a7bb0-de0f-4fc1-a7fd-811aa794c640"
+    },
+    {
+      "id": "aud-5c3190fa-5a1d-4973-b050-82725c10eebc",
+      "at": "2026-09-08T07:29:30.332Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "client-bill",
+      "entityId": "cbi-4c4a7bb0-de0f-4fc1-a7fd-811aa794c640"
+    },
+    {
+      "id": "aud-00fdbb7e-be15-4a9b-a537-573fa9a88cc3",
+      "at": "2026-09-08T07:29:30.330Z",
+      "userId": "usr-admin",
+      "action": "CERTIFY",
+      "entity": "client-bill",
+      "entityId": "cbi-753cec32-4227-4fb2-b6ad-61bd95fb1e05"
+    },
+    {
+      "id": "aud-87a17aa3-81fa-4b93-ab37-637468064b1d",
+      "at": "2026-09-08T07:29:30.327Z",
+      "userId": "usr-admin",
+      "action": "SUBMIT",
+      "entity": "client-bill",
+      "entityId": "cbi-753cec32-4227-4fb2-b6ad-61bd95fb1e05"
+    },
+    {
+      "id": "aud-a540f019-3a50-4cae-9894-479729c3c78e",
+      "at": "2026-09-08T07:29:30.325Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "client-bill",
+      "entityId": "cbi-753cec32-4227-4fb2-b6ad-61bd95fb1e05"
+    },
+    {
+      "id": "aud-89e41d30-9104-4081-90a9-1a5a193c54b2",
+      "at": "2026-09-08T07:29:30.321Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "boq-item",
+      "entityId": "boq-8070a7c8-5c94-448e-a11d-f9413ebc8186"
+    },
+    {
+      "id": "aud-3269547a-3d0d-407f-a787-513bd6831fb0",
+      "at": "2026-09-08T07:29:30.316Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "project",
+      "entityId": "prj-f4d41b6c-2c47-4ee7-ae27-fdc4e726fdf8"
+    },
+    {
+      "id": "aud-ef64ae2a-b90f-4e61-8d3d-aa8cc6ad2e62",
+      "at": "2026-09-08T07:29:30.294Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    }
+  ]
+}

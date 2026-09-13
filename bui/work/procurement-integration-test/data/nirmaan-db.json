@@ -1,0 +1,507 @@
+{
+  "version": 1,
+  "company": {
+    "name": "Nayan Construction and Engineering Consultancy Pvt. Ltd.",
+    "country": "Nepal",
+    "currency": "NPR",
+    "fiscalYear": "2083/84 BS",
+    "vatRate": 13
+  },
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "Ashwin Shrestha",
+      "email": "admin@nirmaan.local",
+      "role": "admin",
+      "salt": "8cf428e93767ce88a6a6113b7426b463",
+      "hash": "c28e057dd1111662f65862567a3d2ad3e931c384f7d3168b6490c23e71a78e5f",
+      "active": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj-a898f2e2-90bc-4e19-bb8a-64023113377f",
+      "code": "PRJ-001",
+      "name": "Integration test",
+      "client": "QA",
+      "contractValue": 5000,
+      "budget": 1000,
+      "actualCost": 1000,
+      "committedCost": 0,
+      "forecastMargin": 80,
+      "status": "Setup",
+      "createdAt": "2026-09-08T07:22:14.310Z"
+    }
+  ],
+  "vendors": [
+    {
+      "id": "ven-551a1529-cb0b-4cf7-9c6a-01f9adcc7e4c",
+      "name": "QA Vendor",
+      "pan": "",
+      "contact": "",
+      "status": "Active",
+      "createdAt": "2026-09-08T07:22:14.317Z"
+    }
+  ],
+  "requisitions": [
+    {
+      "id": "req-89b730a3-3ab5-410d-8d5e-e949aa6228d5",
+      "projectId": "prj-a898f2e2-90bc-4e19-bb8a-64023113377f",
+      "boqItemId": "boq-94e914f1-cf99-4f05-9d90-06247658790c",
+      "description": "Test item",
+      "unit": "Nos",
+      "quantity": 10,
+      "requestedRate": 100,
+      "status": "Approved",
+      "createdAt": "2026-09-08T07:22:14.318Z",
+      "createdBy": "usr-admin",
+      "approvedBy": "usr-admin"
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "id": "po-83df2b3d-741f-4cbd-ae3a-9f45dd82377a",
+      "number": "PO-0001",
+      "requisitionId": "req-89b730a3-3ab5-410d-8d5e-e949aa6228d5",
+      "projectId": "prj-a898f2e2-90bc-4e19-bb8a-64023113377f",
+      "boqItemId": "boq-94e914f1-cf99-4f05-9d90-06247658790c",
+      "vendorId": "ven-551a1529-cb0b-4cf7-9c6a-01f9adcc7e4c",
+      "quantity": 10,
+      "unit": "Nos",
+      "unitRate": 100,
+      "netAmount": 1000,
+      "receivedQuantity": 10,
+      "billedQuantity": 10,
+      "status": "Approved",
+      "createdAt": "2026-09-08T07:22:14.325Z",
+      "createdBy": "usr-admin",
+      "approvedBy": "usr-admin"
+    }
+  ],
+  "inventory": [],
+  "invoices": [],
+  "audit": [
+    {
+      "id": "aud-5f7abb9c-7ac1-4532-9491-a950c24d220f",
+      "at": "2026-09-08T07:22:14.341Z",
+      "userId": "usr-admin",
+      "action": "APPROVE",
+      "entity": "vendor-bill",
+      "entityId": "vbi-dd5d9407-9ff7-47f5-b419-950368d9f78d"
+    },
+    {
+      "id": "aud-21f90ee3-9a7c-4acd-9c20-a8e86c3d9e45",
+      "at": "2026-09-08T07:22:14.338Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "vendor-bill",
+      "entityId": "vbi-dd5d9407-9ff7-47f5-b419-950368d9f78d"
+    },
+    {
+      "id": "aud-50276e63-4732-476b-8b49-6a10c5abb80f",
+      "at": "2026-09-08T07:22:14.336Z",
+      "userId": "usr-admin",
+      "action": "APPROVE",
+      "entity": "vendor-bill",
+      "entityId": "vbi-1a3d246e-75ac-4655-9073-eac204b2d1df"
+    },
+    {
+      "id": "aud-c94a6383-bdcc-4794-8be1-10f008e4fac1",
+      "at": "2026-09-08T07:22:14.334Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "vendor-bill",
+      "entityId": "vbi-1a3d246e-75ac-4655-9073-eac204b2d1df"
+    },
+    {
+      "id": "aud-f51a93b3-a334-4f00-914d-4a61d94e49af",
+      "at": "2026-09-08T07:22:14.332Z",
+      "userId": "usr-admin",
+      "action": "POST",
+      "entity": "goods-receipt",
+      "entityId": "grn-d5c357ee-0e38-455a-9c6e-4d9dd1ae6591"
+    },
+    {
+      "id": "aud-4410773d-f989-4540-bb68-a5f5691f27dc",
+      "at": "2026-09-08T07:22:14.330Z",
+      "userId": "usr-admin",
+      "action": "POST",
+      "entity": "goods-receipt",
+      "entityId": "grn-10625f99-bf07-4312-a9e5-08a9c05e5739"
+    },
+    {
+      "id": "aud-1fd0fc07-36aa-4774-b7ac-fbf0a3a55b0c",
+      "at": "2026-09-08T07:22:14.328Z",
+      "userId": "usr-admin",
+      "action": "APPROVE",
+      "entity": "purchase-order",
+      "entityId": "po-83df2b3d-741f-4cbd-ae3a-9f45dd82377a"
+    },
+    {
+      "id": "aud-8ebf76d9-f84a-4fd6-914c-1683d5c229c7",
+      "at": "2026-09-08T07:22:14.325Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "purchase-order",
+      "entityId": "po-83df2b3d-741f-4cbd-ae3a-9f45dd82377a"
+    },
+    {
+      "id": "aud-7a8ab34a-14a7-478e-9e6d-546b62fe4a17",
+      "at": "2026-09-08T07:22:14.323Z",
+      "userId": "usr-admin",
+      "action": "APPROVE",
+      "entity": "requisition",
+      "entityId": "req-89b730a3-3ab5-410d-8d5e-e949aa6228d5"
+    },
+    {
+      "id": "aud-5934ac07-63e9-4a97-94b4-e75890f4a5d6",
+      "at": "2026-09-08T07:22:14.321Z",
+      "userId": "usr-admin",
+      "action": "SUBMIT",
+      "entity": "requisition",
+      "entityId": "req-89b730a3-3ab5-410d-8d5e-e949aa6228d5"
+    },
+    {
+      "id": "aud-67b83f99-f7e4-4b8b-bc86-984b268c5966",
+      "at": "2026-09-08T07:22:14.318Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "requisition",
+      "entityId": "req-89b730a3-3ab5-410d-8d5e-e949aa6228d5"
+    },
+    {
+      "id": "aud-b28a9535-2655-461b-beeb-157d0bcaf60f",
+      "at": "2026-09-08T07:22:14.317Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "vendor",
+      "entityId": "ven-551a1529-cb0b-4cf7-9c6a-01f9adcc7e4c"
+    },
+    {
+      "id": "aud-c78bfcae-2621-4056-a5e4-298c7d7d6fd9",
+      "at": "2026-09-08T07:22:14.314Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "boq-item",
+      "entityId": "boq-94e914f1-cf99-4f05-9d90-06247658790c"
+    },
+    {
+      "id": "aud-768e3f9a-6c9a-4722-8508-526b1612bb53",
+      "at": "2026-09-08T07:22:14.310Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "project",
+      "entityId": "prj-a898f2e2-90bc-4e19-bb8a-64023113377f"
+    },
+    {
+      "id": "aud-a058c5d8-2353-4801-b978-e485339558bb",
+      "at": "2026-09-08T07:22:14.281Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-87de056a-5f07-4190-883a-1bddcd7a174c",
+      "at": "2026-09-08T07:16:47.517Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-b22cf370-8d73-4cab-bf45-85e5703e1a06",
+      "at": "2026-09-08T07:16:47.499Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-89ce226d-39f5-4455-81ac-8f57ba71235a",
+      "at": "2026-09-08T07:16:43.022Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-6f8233a4-bb0b-41c3-a0da-4a23ee17a949",
+      "at": "2026-09-08T07:15:44.935Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-f975f48d-a197-4b4d-b444-f24d1884f41f",
+      "at": "2026-09-08T07:15:44.918Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-4881eeaf-9190-4c65-9742-716a3544a8ae",
+      "at": "2026-09-08T07:15:44.342Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-28846a66-e18e-4c56-a8a6-40da2fed550c",
+      "at": "2026-09-08T07:15:44.324Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-cc6991a2-61a1-44d4-8b3e-5b7f67215484",
+      "at": "2026-09-08T07:14:45.466Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-9bccc411-9e6b-459a-ae97-64cfe981d8fb",
+      "at": "2026-09-08T07:14:45.450Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-8bde2976-81b2-4445-ab69-3ba2dd3704f2",
+      "at": "2026-09-08T07:12:50.435Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    },
+    {
+      "id": "aud-abede0e8-d6ba-4068-bea6-4f85e3099b51",
+      "at": "2026-09-08T07:03:04.306Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "9ce26b4f8e6f09e6f2323b3c7377a7eb6947b8a57b5c20cd9dec8f13493a3c87"
+    },
+    {
+      "id": "aud-2c471a34-8b1e-465e-b01a-f17f3a982ced",
+      "at": "2026-09-08T07:03:04.289Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "4cc147d24cbe784cba7cd28fe1a94ee6a8a1572244bc3b02f91982c68fd14ed9"
+    },
+    {
+      "id": "aud-7837885e-b870-4a7a-845b-d68d1ef99f84",
+      "at": "2026-09-08T07:03:00.381Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "2c05a7f490bf86c0427c01b6d43fe66e95af9691211bd2d0b5255a1d1ee9a372"
+    },
+    {
+      "id": "aud-e637fc87-aa44-470e-bc3d-1610de0086ba",
+      "at": "2026-09-08T07:00:52.992Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "c2aba0d4bff18b83f26f0809419fd11c45a88657e2b7d3b245ca29eda281c393"
+    },
+    {
+      "id": "aud-b757690c-2d71-4485-a2e2-2fabe504c24e",
+      "at": "2026-09-08T07:00:52.975Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "28702ea2e43e81381f0f3f3707fcb44f0b1477d57b3b6dd8ab13f3904c0f5a68"
+    },
+    {
+      "id": "aud-b74c57a9-d81f-4945-8812-c450ed19969a",
+      "at": "2026-09-08T06:59:26.170Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "6d4f8ab7a3bc6b7d36b233784c2146c2f1a1202af74f6dba53523cfff0e46c2b"
+    },
+    {
+      "id": "aud-f5dac29d-1c4f-4aee-bef4-b84d4a037207",
+      "at": "2026-09-08T06:59:26.152Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "b1a82ea1e2844553ae488e568462797765a95c4897e724916b4575e7bf29719d"
+    },
+    {
+      "id": "aud-f5f4c470-a72c-4173-8ed6-d4619223ef5d",
+      "at": "2026-09-08T06:58:57.946Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "bb583c38b1be82e8c0911571d814c273c29a4b759893801fde00c2f2978e4b18"
+    },
+    {
+      "id": "aud-c5339526-f1bd-4f7c-9d63-e88529de5e5f",
+      "at": "2026-09-08T06:50:50.657Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "5f6f235c0e12c3e223b9d98f6311b80b8d058c3a24b1c2e6bf39fa9dc7645d02"
+    },
+    {
+      "id": "aud-8b9e3489-c2b6-4e0d-986d-01f3e27bb18c",
+      "at": "2026-09-08T06:50:47.519Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "80796e51e108178052efa35f3b0622f55d93de064f0a492fdd7c9e6838258338"
+    },
+    {
+      "id": "aud-d1a6b34e-0fa2-4c3d-8b2d-942baa08710f",
+      "at": "2026-09-08T06:50:36.241Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "21e3098700294be47111deb0f9eaf9ca1425b93dfeef7b0f3d2bfd335ded08d7"
+    },
+    {
+      "id": "aud-fac54015-f7ba-4d18-81fc-6eb3ee0a58b1",
+      "at": "2026-09-08T06:50:34.417Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "b69adef96497524cef8ee03eeaee85868caf3fd1066c2415b725ae769f49bd5c"
+    },
+    {
+      "id": "aud-9662a400-8ecb-468f-9f73-5fb7a08d4212",
+      "at": "2026-09-08T06:50:06.843Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "95d88f8852550839a98d398f4aa09aeedc1e852ac34ea7cd4578538c3b827cae"
+    },
+    {
+      "id": "aud-8a360845-ae24-484e-9a14-2cf195f7c55f",
+      "at": "2026-09-08T06:38:28.959Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "3e44802ea2d6872ac618c785d469309bd605e76d6b9d31c21a984fd4bb4e2747"
+    },
+    {
+      "id": "aud-663612bd-fc2d-4492-b4d6-c9862aadbfa3",
+      "at": "2026-09-08T06:35:45.446Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "956513bc158579f231c7a819b9d888c357e699b94d132e49600e40c83647a46f"
+    },
+    {
+      "id": "aud-e1a66301-8df7-4f49-8001-21745481a559",
+      "at": "2026-09-08T06:33:50.729Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "d0bba3552ae9b8621695b81a0e793260e2eb25660891e95453d44ded1a1852a3"
+    },
+    {
+      "id": "aud-7cbbd31a-36e2-4c6c-b9b5-4760d6a22d77",
+      "at": "2026-09-08T06:25:57.568Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "49780e6db2790996704956fee12cf48876f137448ecb9ea9675ffb96769d4f12"
+    }
+  ],
+  "boqItems": [
+    {
+      "id": "boq-94e914f1-cf99-4f05-9d90-06247658790c",
+      "projectId": "prj-a898f2e2-90bc-4e19-bb8a-64023113377f",
+      "costCode": "01.01",
+      "description": "Test item",
+      "unit": "Nos",
+      "quantity": 10,
+      "rate": 100,
+      "budgetAmount": 1000,
+      "actualCost": 1000,
+      "committedCost": 0,
+      "status": "Approved baseline",
+      "createdAt": "2026-09-08T07:22:14.314Z"
+    }
+  ],
+  "goodsReceipts": [
+    {
+      "id": "grn-10625f99-bf07-4312-a9e5-08a9c05e5739",
+      "number": "GRN-0001",
+      "purchaseOrderId": "po-83df2b3d-741f-4cbd-ae3a-9f45dd82377a",
+      "projectId": "prj-a898f2e2-90bc-4e19-bb8a-64023113377f",
+      "boqItemId": "boq-94e914f1-cf99-4f05-9d90-06247658790c",
+      "quantity": 4,
+      "billedQuantity": 4,
+      "unit": "Nos",
+      "status": "Posted",
+      "receivedAt": "2026-09-08T07:22:14.330Z",
+      "createdBy": "usr-admin"
+    },
+    {
+      "id": "grn-d5c357ee-0e38-455a-9c6e-4d9dd1ae6591",
+      "number": "GRN-0002",
+      "purchaseOrderId": "po-83df2b3d-741f-4cbd-ae3a-9f45dd82377a",
+      "projectId": "prj-a898f2e2-90bc-4e19-bb8a-64023113377f",
+      "boqItemId": "boq-94e914f1-cf99-4f05-9d90-06247658790c",
+      "quantity": 6,
+      "billedQuantity": 6,
+      "unit": "Nos",
+      "status": "Posted",
+      "receivedAt": "2026-09-08T07:22:14.332Z",
+      "createdBy": "usr-admin"
+    }
+  ],
+  "clientBills": [],
+  "vendorBills": [
+    {
+      "id": "vbi-1a3d246e-75ac-4655-9073-eac204b2d1df",
+      "number": "VB-0001",
+      "goodsReceiptId": "grn-10625f99-bf07-4312-a9e5-08a9c05e5739",
+      "purchaseOrderId": "po-83df2b3d-741f-4cbd-ae3a-9f45dd82377a",
+      "projectId": "prj-a898f2e2-90bc-4e19-bb8a-64023113377f",
+      "boqItemId": "boq-94e914f1-cf99-4f05-9d90-06247658790c",
+      "vendorId": "ven-551a1529-cb0b-4cf7-9c6a-01f9adcc7e4c",
+      "quantity": 4,
+      "netAmount": 400,
+      "vatRate": 13,
+      "vatAmount": 52,
+      "totalAmount": 451.99999999999994,
+      "paidAmount": 0,
+      "status": "Approved",
+      "createdAt": "2026-09-08T07:22:14.334Z",
+      "createdBy": "usr-admin",
+      "approvedBy": "usr-admin"
+    },
+    {
+      "id": "vbi-dd5d9407-9ff7-47f5-b419-950368d9f78d",
+      "number": "VB-0002",
+      "goodsReceiptId": "grn-d5c357ee-0e38-455a-9c6e-4d9dd1ae6591",
+      "purchaseOrderId": "po-83df2b3d-741f-4cbd-ae3a-9f45dd82377a",
+      "projectId": "prj-a898f2e2-90bc-4e19-bb8a-64023113377f",
+      "boqItemId": "boq-94e914f1-cf99-4f05-9d90-06247658790c",
+      "vendorId": "ven-551a1529-cb0b-4cf7-9c6a-01f9adcc7e4c",
+      "quantity": 6,
+      "netAmount": 600,
+      "vatRate": 13,
+      "vatAmount": 78,
+      "totalAmount": 677.9999999999999,
+      "paidAmount": 0,
+      "status": "Approved",
+      "createdAt": "2026-09-08T07:22:14.338Z",
+      "createdBy": "usr-admin",
+      "approvedBy": "usr-admin"
+    }
+  ],
+  "payments": []
+}

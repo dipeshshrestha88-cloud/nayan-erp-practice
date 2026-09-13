@@ -1,0 +1,143 @@
+{
+  "version": 4,
+  "company": {
+    "name": "Nayan Construction and Engineering Consultancy Pvt. Ltd.",
+    "country": "Nepal",
+    "currency": "NPR",
+    "fiscalYear": "2083/84 BS",
+    "vatRate": 13,
+    "taxConfig": {
+      "vatRate": 13,
+      "tdsRate": 1.5,
+      "retentionRate": 5
+    }
+  },
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "Ashwin Shrestha",
+      "email": "admin@nirmaan.local",
+      "role": "admin",
+      "salt": "93819f9f41a2ab59c21612a92f7bda6f",
+      "hash": "afc42d1e2ed8956de9b4761d39455dcac2ce959a9412ca4c3a99c8eaa16a2dfb",
+      "active": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj-efe3b436-35d1-478f-b7f3-87321efaabce",
+      "code": "PRJ-001",
+      "name": "Integrity",
+      "client": "Test",
+      "contractValue": 1500,
+      "budget": 1000,
+      "actualCost": 0,
+      "committedCost": 0,
+      "forecastMargin": 33.3,
+      "status": "Setup",
+      "createdAt": "2026-09-08T07:34:51.439Z"
+    }
+  ],
+  "boqItems": [
+    {
+      "id": "boq-2594284f-d5de-42da-95a3-b4d76402053b",
+      "projectId": "prj-efe3b436-35d1-478f-b7f3-87321efaabce",
+      "costCode": "C1",
+      "description": "Work",
+      "unit": "Nos",
+      "quantity": 10,
+      "rate": 100,
+      "sellingRate": 150,
+      "budgetAmount": 1000,
+      "actualCost": 0,
+      "committedCost": 0,
+      "status": "Approved baseline",
+      "createdAt": "2026-09-08T07:34:51.443Z"
+    }
+  ],
+  "vendors": [],
+  "requisitions": [],
+  "purchaseOrders": [],
+  "goodsReceipts": [],
+  "vendorBills": [],
+  "payments": [],
+  "inventory": [],
+  "invoices": [],
+  "clientBills": [
+    {
+      "id": "cbi-46ac696a-3551-40de-83fb-e90e656f257a",
+      "number": "RB-0001",
+      "projectId": "prj-efe3b436-35d1-478f-b7f3-87321efaabce",
+      "adDate": "2026-09-08",
+      "bsDate": "",
+      "lines": [
+        {
+          "boqItemId": "boq-2594284f-d5de-42da-95a3-b4d76402053b",
+          "costCode": "C1",
+          "description": "Work",
+          "unit": "Nos",
+          "quantity": 6,
+          "sellingRate": 150,
+          "grossAmount": 900
+        },
+        {
+          "boqItemId": "boq-2594284f-d5de-42da-95a3-b4d76402053b",
+          "costCode": "C1",
+          "description": "Work",
+          "unit": "Nos",
+          "quantity": 6,
+          "sellingRate": 150,
+          "grossAmount": 900
+        }
+      ],
+      "grossAmount": 1800,
+      "vatRate": 13,
+      "vatAmount": 234,
+      "tdsRate": 1.5,
+      "tdsAmount": 27,
+      "retentionRate": 5,
+      "retentionAmount": 90,
+      "advanceRecovery": 0,
+      "totalReceivable": 1917,
+      "receivedAmount": 0,
+      "status": "Draft",
+      "createdAt": "2026-09-08T07:34:51.467Z",
+      "createdBy": "usr-admin"
+    }
+  ],
+  "clientReceipts": [],
+  "audit": [
+    {
+      "id": "aud-30c7bee2-56e7-4545-bdab-a2950ade1818",
+      "at": "2026-09-08T07:34:51.467Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "client-bill",
+      "entityId": "cbi-46ac696a-3551-40de-83fb-e90e656f257a"
+    },
+    {
+      "id": "aud-1a1d16c2-6ce1-4ffb-8c33-18728b7f9463",
+      "at": "2026-09-08T07:34:51.443Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "boq-item",
+      "entityId": "boq-2594284f-d5de-42da-95a3-b4d76402053b"
+    },
+    {
+      "id": "aud-8a8618bb-25e3-4f72-809d-325a28774ae6",
+      "at": "2026-09-08T07:34:51.439Z",
+      "userId": "usr-admin",
+      "action": "CREATE",
+      "entity": "project",
+      "entityId": "prj-efe3b436-35d1-478f-b7f3-87321efaabce"
+    },
+    {
+      "id": "aud-00cbc517-2de2-4367-8861-6cbc9078d3cd",
+      "at": "2026-09-08T07:34:51.421Z",
+      "userId": "usr-admin",
+      "action": "LOGIN",
+      "entity": "session",
+      "entityId": "usr-admin"
+    }
+  ]
+}
